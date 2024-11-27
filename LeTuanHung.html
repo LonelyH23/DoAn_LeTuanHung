@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link  href="fontawesome-free-6.7.1-web/css/all.css" rel="stylesheet">
+    <link  href="fontawesome-free-6.7.1-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="LeTuanHung.css" type="text/css"/>
+    <title>Document</title>
+    <style>
+</style>
+</head>
+<body>
+  <div class="Header">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="Anh/logo_moi.png" style="width: 100%; height: 100%;" ></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#Home">Trang Chủ</a></li>
+          <li><a href="#NewS">Tin Tức</a></li>    
+          <li><a href="#fields">Các Sân Bóng</a></li>
+          <li><a href="#Booking">Đặt Sân</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <ul class="nav navbar-nav">
+          <li><a href="#LienHe" style="margin-left: 550px;"><i class="fa-solid fa-phone"></i> <strong>Liên Hệ: 0251.3994.011</strong> </a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+    <div id="Home">
+      <section>
+        <h2><i class="fa-solid fa-lightbulb"></i> Giới Thiệu</h2>
+        <p style="font-size: 18px;">Sân bóng là một khu vực được thiết kế và xây dựng để chơi các môn thể thao bóng đá, bóng rổ, bóng chuyền, và nhiều môn thể thao khác. Sân bóng thường có kích thước và các yếu tố đặc biệt phù hợp với mỗi môn thể thao.</p>
+        <div class="row">
+          <div class="col-sm-6" ><img src="Anh/Hinh-anh-–-2020-San-Bong-Cu-Chi-Sau-01-Nam-Khai-Thac-1.jpg" style="width: 100%; height: 100%; " ></div>
+          <div class="col-sm-6" ><img src="Anh/Hinh-anh-–-2020-Ban-Giao-Cong-Trinh-Nghe-An-2.jpg" style="width: 100%; height: 100%;" ></div>
+         
+        </div>
+      </section>
+    </div>
+    <div id="NewS">
+      <section>
+        <h2><i class="fa-solid fa-newspaper"></i> Tin Tức</h2>
+        <p>Giải Bóng Đá 20/11</p>
+        <h3>Kết quả và hình ảnh vòng 1, 2 Giải bóng đá Sonadezi Chào mừng ngày Nhà giáo Việt Nam 20/11 </h3>
+        <div class="row">
+          <div class="col-sm-4" ><img src="Anh/LichBongDa.jpg" ></div>
+          <div class="col-sm-4" ><img src="Anh/VongBanKet.jpg" ></div>
+          <div class="col-sm-4" ><img src="Anh/2db.jpg" ></div>
+        </div>
+      </section>
+
+    </div>
+    <div id="fields">
+      <section id="field-table">
+        <h2><i class="fa-solid fa-table"> </i> Thông Tin Các Loại Sân Bóng</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tên Sân</th>
+                    <th>Loại Sân</th>
+                    <th>Địa Chỉ</th>
+                    <th>Giá Thuê (VND/giờ)</th>
+                    <th>Đặc Điểm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sân Bóng 5 Người</td>
+                    <td>5 Người</td>
+                    <td>Sân Bóng Trường CĐ Sonadezi</td>
+                    <td>200,000</td>
+                    <td>Sân cỏ nhân tạo, có đèn</td>
+                </tr>
+                <tr>
+                    <td>Sân Bóng 7 Người</td>
+                    <td>7 Người</td>
+                    <td>Sân Bóng Trường CĐ Sonadezi</td>
+                    <td>300,000</td>
+                    <td>Sân cỏ nhân tạo, có đèn</td>
+                </tr>
+                <tr>
+                  <td>Sân Bóng 11 Người</td>
+                  <td>11 Người</td>
+                  <td>Sân Bóng Trường CĐ Sonadezi</td>
+                  <td>600,000</td>
+                  <td>Sân cỏ nhân tạo, có đèn</td>
+              </tr>
+            </tbody>
+        </table>
+    </section>
+    </div>
+
+    <div id="Booking">
+      <section>
+        <h2><i class="fa-regular fa-futbol"></i> </i>Đặt Sân</h2>
+        <form action="#">
+          <label for="SanBong">Chọn Sân Bóng:</label>
+          <select id="SanBong" name="SanBong">
+            <option value="San5">Sân Bóng 5 Người</option>
+            <option value="San7">Sân Bóng 7 Người</option>
+            <option value="San7">Sân Bóng 11 Người</option>
+          </select>
+          <label for="GioDa">Chọn Thời Gian Đá:</label>
+          <select id="GioDa" name="GioDa" >
+            <option value="San5">1 giờ</option>
+            <option value="San7">2 giờ</option>
+            <option value="San7">30 phút</option>
+          </select>
+          <br><br>
+         <button type="submit" style=" height: 30px; font-size: larger;" >Đặt Sân </button>
+          
+      </section>
+    </div>
+
+    <footer id="LienHe">
+      
+     <div class="LienKet">
+        <div><h3>kết nối với chúng tôi:</h3></div>
+        <div><a href="https://www.facebook.com/truongsonadezi/"><img src="Anh/social_facebook.png" ></a></div>
+        <div><a href="https://workspaceupdates.googleblog.com/2023/04/new-community-features-for-google-chat-and-an-update-currents%20.html"><img src="Anh/social_googleplus.png" ></a></div>
+        <div><a href="https://sonadezi.edu.vn/"><img src="Anh/social_in.png" ></a></div>
+        <div><a href="#"><img src="Anh/social_instagram.png" ></a></div>
+        <div><a href="#"><img src="Anh/social_twitter.png" ></a></div>
+        <div><a href="https://www.youtube.com/channel/UCLxhuk1kJOMT-GN8wjNOy4g"><img src="Anh/social_youtube.png" ></a></div>
+      </div>
+      <hr>
+    <div class="Address">
+      <div class="Address1">
+          <h3>Trường Cao đẳng</h3>
+          <h3>Công nghệ và Quản trị Sonadezi</h3>
+          <br>
+          <br>
+          <br>
+          <p><i class="fa-solid fa-map"></i> : <strong>Số 01, đường 6A, KCN Biên Hòa II, Biên Hòa, Đồng Nai</strong></p>
+          <p><i class="fa-solid fa-phone-flip"></i> : <strong>0251.3994.011/012/013</strong></p>
+          <p><i class="fa-solid fa-envelope"></i> : <strong>info@sonadezi.edu.vn</strong></p>
+      </div>
+      <div class="Address2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15670.914382783034!2d106.8589509!3d10.908219!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174df003a9182c7%3A0x98b1f6aaf62f66e9!2zU8OibiBiw7NuZyBTb25hZGV6aQ!5e0!3m2!1svi!2s!4v1732720090363!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>    
+    </div>
+    <hr>
+      <p> Copyright © IGC Group. All rights reserved </p>
+    </footer>
+   
+</body>
+</html>
